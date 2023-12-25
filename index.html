@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form action="">
+    <p class="comp">THE</p>
+    <hr>
+    <p class="head">Welcome to <span class="bold">THE</span> company</p>
+    <input type="text" class="input" placeholder="Full Name" id="fullname">
+    <input type="email" class="input" placeholder="Email" id="email" oninput="isEmail()">
+    <p class="tip1"></p>
+    <input type="password" class="input" placeholder="Create Password" id="password1" oninput="isStrong()">
+    <p class="tip"></p>
+    <input type="password" class="input" placeholder="Repeat Password" id="password2" oninput="isSame()">
+    <div class="check">
+      <input type="checkbox" id="check">
+      <label for="">I agree to the terms and conditions</label>
+    </div>
+    
+    <button class="btn" id="button" disabled>Register</button>
+
+
+    <hr>
+    <p class="footer">Alerady have an account? <a href="#">Login</a></p>
+  </form> 
+  
+  <script src="app.js"></script>
+  
+</body>
+</html>
